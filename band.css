@@ -1,0 +1,147 @@
+@media screen and (max-width:414.4px){
+.tex1{
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;  
+        
+      }
+    .navbars{
+    display:none;
+}
+.img{
+    width:90% !important;
+}
+.w3-image{
+   width: 95% !important;
+}
+/* .navbars1{
+   
+    
+    margin-left: 260px;
+} */
+.tex{
+    top: 90% !important;
+    left:50% !important;
+    transform: translate(-50%,-50%);
+}
+.w3-justify{
+    font-size: 10px!important;
+}
+
+}
+
+.nav1{
+    top: 0;
+    height: 2.6rem;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index:999; ;
+}
+.navbars > a{
+    text-decoration: none;
+    color: white;
+    padding:12px 24px!important
+}
+.navbars > a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: var(--bs-gray-500);
+    padding:10px 24px!important
+}
+.navbars1 > a{
+    
+    text-decoration: none;
+    color: white;
+    padding:12px 24px!important
+}
+.navbars1 > a:hover{
+    text-decoration: none;
+    color: white;
+    background-color:orangered;
+    padding:10px 30px!important
+}
+
+.img{
+    background-image: url('./la2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.tex{
+    text-align: center;
+    position: absolute;
+    color: aqua;
+    top: 90%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.tex1{
+  padding-left: 4rem;
+  padding-right: 4rem;  
+  
+}
+.w3-justify{
+    text-align: justify;
+}
+.w3mb{
+    margin-bottom: 16px !important;
+}
+.w3r{
+    border-radius: 4px;
+}
+div > ul{
+    list-style-type: none;
+    padding: 0;
+    /* margin: 0; */
+    border:0 !important;
+    background-color: aliceblue !important;
+
+}
+div > ul > li{
+  
+    padding:8px 16px !important;
+    border-bottom:2px solid #ddd;
+   
+}
+div > ul > li> span{
+    background-color: red;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left:16px !important;
+}
+.round{
+    background-color: black !important;
+    border-radius: 50% !important;
+    float: right;
+}
+.btn1{
+    padding: 0.5rem;
+    border: 1px solid transparent !important;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.btn1:hover{
+    background-color: var(--bs-gray-500);
+    color: black;
+    
+}
+#brd{
+    border:1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.jk{
+  opacity: 0.60;  
+}
+.jk:hover{
+    opacity:1;
+
+}
