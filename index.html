@@ -31,41 +31,87 @@
 </head>
 <body>
 <div class="contaier-fluid">
-    <div class="row">
+    <div class="row m-auto">
+ 
 
 
-<!-- navbar -->
-<div class=" col-12 nav1 py-2 bg-black">
-<div class="row">
-    <div class="col-10 navbars" >
- <a href="#">HOME</a> 
-<a href="#">BAND</a>
-<a href="#">TOUR</a>
-<a href="#">CONTACT</a>
-<span href="#" class="dropdown bg-warning" style="width: 20px;">
- <button class="btn dropdown-toggle text-white" type="button"
- id="dropdownMenuButton1" aria-expanded="false" data-bs-toggle="dropdown">MORE</button>    
-     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButoon1">
-        <li><a class="dropdown-item" type="button">Merchandise</a></li>
-        <li><a class="dropdown-item" type="button">Extras</a></li>
-        <li><a class="dropdown-item" type="button">Media</a></li>
-    </ul></span>
+<!-- no_zone -->
+<nav class="navbar navbar-expand-lg navbar-light bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Navbar</a>
+      <button class="navbar-toggler bg-white" type="button" 
+      data-bs-toggle="collapse"
+       data-bs-target="#navbarNavDropdown" 
+       aria-controls="navbarNavDropdown" 
+       aria-expanded="false" 
+       aria-label="Toggle navigation"
+       >
 
-</div>
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<div class="col-2 navbars1"><a href="#" style="margin-left:85px"><i class="fa fa-search"></i></a></div>
-</div>  
- </div> 
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<!- picture_area -->
 
+
+
+
+
+
+<!-- picture_area -->
+<!-- 
     <div class="col-12 img">
 
         <div class="tex " >
             <h2>Los Angeles</h2>
         <p >We had the best time playing at Venice Beach</p>
         </div>
-    </div>
+    </div> -->
+
+
+    <img alt=""  id="img10" style="width:100%;height:500px;">
+
+
+<!-- <div id="img10" style="height: 100px;background-color:blue;"> -->
+
+<!-- <img src="./paris.jpg" alt=""  style="width:100%;height:500px">
+<img src="./paris.jpg" alt=""  style="width:100%;height:500px">
+
+
+</div> -->
+
+
+
+
+
+
+
+
+
 
 <!-- band_section -->
 <div class=" col-12  tex1 text-center" style="padding-top: 64px;padding-bottom:64px;">
@@ -205,8 +251,34 @@ style="padding-top: 64px;padding-bottom:64px;font-size:24px;">
 
 
 
+
+
+<script>
+
+
+
+let image=['./chicago.jpg','./la.jpg','./ny.jpg']
+let count=0
+
+
+setInterval(()=>{
+
+    if(count>image.length-1){
+        count=0
+    } 
+    console.log(count)
+    document.getElementById('img10').src=image[count]
+    console.log(document.getElementById('img10').childNodes)
+    count++
+},2000)
+
+
+
+
+
+
+</script>
     </div>
-</div>
-    
+</div>    
 </body>
 </html>
